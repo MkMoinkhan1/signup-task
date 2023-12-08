@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap'); */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #3a5888, #15284c);
+
+}
+.main .signup{
+    width: 80%;
+    height: 80vh;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+}
+.main .signup .left-signup{
+    width: 40%;
+    height: 100%;
+    border-radius: 20px 0 0 20px ;
+
+}
+.main .signup .left-signup img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px ;
+    animation: 12s autoplay2 infinite ease-in-out
+}
+@keyframes autoplay2 {
+
+    0% 
+    {}
+    4% {top: 0%}
+    33.33% {top: 0%}
+    37.33% {top: -100%}
+    100% {top: -100%}
+  }
+
+.main .signup .right-signup{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 20px 20px 0 ;
+    flex-direction: column;
+}
+.main .signup .right-signup .form-div{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main .signup .right-signup .form-div input[type="text"],input[type="number"]{
+    padding: 10px 20px;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    border: 1px solid;
+    font-size: 0.9rem;
+}
+.main .signup .right-signup .form-div input,button{
+    margin: 12px 0;
+}
+.main .signup .right-signup .form-div .date{
+    padding: 8px 20px;
+    width: 80%;
+}
+button{
+    padding: 10px 25px;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: #15284c;
+    color: white;
+    font-size: 1rem;
+}
+h1{
+    font-weight: 700;
+}
+label{
+    font-size: 0.9rem;
+    color: #000000a3;
+    margin: 0 15px;
+}
